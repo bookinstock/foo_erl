@@ -4,7 +4,7 @@
 
 % -import(io, [format/1]).
 
-greeting_and_double(X):
+greeting_and_double(X) ->
   hello(),
   add(X, X).
 
