@@ -54,10 +54,8 @@ sum(L) -> sum(L, 0).
 sum([], N)    -> N;
 sum([H|T], N) -> sum(T, H+N).
 
-% Funs are "anonymous" functions. They are called this way because they have
-% no name. However, they can be assigned to variables.
-Double = fun(X) -> 2 * X end. % `Double` points to an anonymous function
-                              % with handle: #Fun<erl_eval.6.17052888>
+Double = fun(X) -> 2 * X end. 
+
 Double(2).  % 4
 
 % Functions accept funs as their arguments and can return funs.
